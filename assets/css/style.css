@@ -1,0 +1,427 @@
+/* ==========================================
+   SMART EVENT CAMPUS
+   STYLE.CSS FINAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+    background:#0056b3 !important;
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    font-size:23px;
+    font-weight:bold;
+    color:#fff !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-weight:500;
+    margin:0 8px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+.nav-link.active{
+    color:#ffc107 !important;
+    border-bottom:3px solid #ffc107;
+    font-weight:bold;
+}
+
+.navbar .btn-light{
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    position: relative;
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(135deg,#0056b3,#0d6efd);
+
+    overflow: hidden;
+
+}
+
+.hero::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.25);
+
+    z-index: 1;
+
+}
+
+.hero .container{
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.hero .row{
+
+    min-height: 90vh;
+
+    align-items: center;
+
+}
+
+.hero h1{
+
+    color: #ffffff;
+
+    font-size: 60px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    text-shadow: 2px 2px 8px rgba(0,0,0,.35);
+
+}
+
+.hero p{
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    text-shadow: 1px 1px 5px rgba(0,0,0,.3);
+
+}
+
+.hero .btn{
+
+    padding: 12px 35px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+}
+
+.hero .btn-warning{
+
+    color: #fff;
+
+}
+
+.hero .btn-outline-light:hover{
+
+    color: #0056b3;
+
+    background: #fff;
+
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+section{
+    padding:70px 0;
+}
+
+section h2{
+    color:#0056b3;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card-header{
+    border:none;
+    font-weight:bold;
+}
+
+.card-body{
+    padding:25px;
+}
+
+.card h4{
+    color:#0056b3;
+    font-weight:bold;
+}
+
+.card p{
+    color:#666;
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+    font-size:13px;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn{
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#0056b3;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#004494;
+    transform:translateY(-2px);
+}
+
+.btn-success:hover,
+.btn-danger:hover,
+.btn-warning:hover{
+    transform:translateY(-2px);
+}
+
+.btn-warning{
+    color:#fff;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-control,
+.form-select{
+    border-radius:10px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#0056b3;
+    box-shadow:0 0 8px rgba(0,86,179,.2);
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table{
+    background:#fff;
+}
+
+.table th{
+    background:#0056b3;
+    color:#fff;
+    text-align:center;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+.table-hover tbody tr:hover{
+    background:#eef5ff;
+}
+
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.card-dashboard{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card-number{
+    font-size:50px;
+    font-weight:bold;
+    color:#0056b3;
+}
+
+.dashboard-icon{
+    font-size:55px;
+    color:#0056b3;
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   STATISTIK
+========================================== */
+
+.stat-card{
+    transition:.35s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card i{
+    font-size:55px;
+    color:#0056b3;
+    transition:.3s;
+}
+
+.stat-card:hover i{
+    transform:scale(1.15);
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.fa-solid{
+    color:inherit;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#0056b3;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.fade-up{
+    animation:fadeUp .8s;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE HERO
+=========================== */
+
+@media (max-width:992px){
+
+    .hero{
+
+        text-align: center;
+
+    }
+
+    .hero h1{
+
+        font-size: 44px;
+
+    }
+
+    .hero p{
+
+        font-size: 18px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height: 75vh;
+
+    }
+
+    .hero .row{
+
+        min-height: 75vh;
+
+    }
+
+    .hero h1{
+
+        font-size: 34px;
+
+    }
+
+    .hero p{
+
+        font-size: 16px;
+
+    }
+
+}
